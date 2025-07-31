@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIデンティファイ | 安全で楽しいSNSライフをあなたに</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1200x800/000000/FFFFFF?text=SNS+Image');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- ヘッダー -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                <a href="#">AIデンティファイ</a>
+            </h1>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="hover:text-cyan-400 transition">AIデンティファイとは？</a>
+                <a href="#versions" class="hover:text-cyan-400 transition">バージョン紹介</a>
+                <a href="#how-to-use" class="hover:text-cyan-400 transition">使い方</a>
+            </nav>
+            <a href="#versions" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-lg transition">
+                今すぐ試す
+            </a>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <main>
+        <section class="hero-bg text-center py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">写真一枚で、人生は変わる。</h2>
+                <p class="text-lg md:text-2xl mb-8 text-gray-300">AIデンティファイで、SNSをもっと安全に、もっと楽しく。</p>
+                <p class="mb-12 max-w-2xl mx-auto">うっかり写り込んだ個人情報をAIが自動で検出し、瞬時に補正。あなたのプライバシーを守ります。</p>
+                <a href="#versions" class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 text-lg">
+                    無料で始める
+                </a>
+            </div>
+        </section>
+
+        <!-- バージョン紹介セクション -->
+        <section id="versions" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">3つのバージョンを試してみよう</h2>
+                    <p class="text-gray-400 mt-2">あなたのニーズに合ったAIデンティファイを選べます。</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- 基本バージョン -->
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-2xl font-bold mb-3 text-cyan-400">基本バージョン</h3>
+                        <p class="mb-4 text-gray-400">ローカル実行も可能な標準モデル。手軽にAIデンティファイの基本機能を体験できます。</p>
+                        <a href="https://rein0421-aidentify.hf.space/" target="_blank" class="block text-center w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-4 rounded-lg transition">
+                            基本バージョンへ
+                        </a>
+                    </div>
+                    <!-- LLM使用バージョン -->
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-2xl font-bold mb-3 text-lime-400">LLM使用バージョン</h3>
+                        <p class="mb-4 text-gray-400">大規模言語モデルを活用し、より高精度でリッチな編集が可能なアドバンスモデルです。</p>
+                        <a href="https://rein0421-aidentify-llm.hf.space/" target="_blank" class="block text-center w-full bg-lime-600 hover:bg-lime-700 text-white font-bold py-3 px-4 rounded-lg transition">
+                            LLMバージョンへ
+                        </a>
+                    </div>
+                    <!-- UI案 -->
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-2xl font-bold mb-3 text-fuchsia-400">UIデザイン案</h3>
+                        <p class="mb-4 text-gray-400">開発中の新しいUIデザイン案。未来のAIデンティファイの姿を覗いてみてください。（※現在APIは未接続です）</p>
+                        <a href="https://aidentify-ui-tau.vercel.app/" target="_blank" class="block text-center w-full bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-3 px-4 rounded-lg transition">
+                            UI案を見る
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AIデンティファイとは？ -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">SNSに潜む「うっかり」を防ぐ</h2>
+                    <p class="max-w-3xl mx-auto text-gray-400 mb-12">SNSの投稿は、楽しい思い出を共有する素晴らしいツールです。しかし、写真に写り込んだ些細な情報から、あなたの個人情報が特定されてしまう危険性も。AIデンティファイは、そんなリスクからあなたを守るために生まれました。</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <div class="glass-effect p-6 rounded-xl">
+                            <h3 class="text-xl font-bold mb-2">① 危険度を瞬時に判定</h3>
+                            <p class="text-gray-300">アップロードされた写真に、個人情報特定に繋がりうるオブジェクトがどれだけ含まれているかをAIが分析し、「危険度」として数値化します。</p>
+                        </div>
+                        <div class="glass-effect p-6 rounded-xl">
+                            <h3 class="text-xl font-bold mb-2">② 危険な物体を自動で検出</h3>
+                            <p class="text-gray-300">看板、表札、制服、レシートなど、21種類以上の個人情報リスクのある物体をAIが自動で検出します。</p>
+                        </div>
+                         <div class="glass-effect p-6 rounded-xl">
+                            <h3 class="text-xl font-bold mb-2">③ ワンタップで自動補正</h3>
+                            <p class="text-gray-300">検出された物体を、周囲に馴染むように自然に消去（インペインティング）または、ぼかし加工を施します。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x400/1A202C/FFFFFF?text=Before+%26+After" alt="AIデンティファイによる画像補正の例" class="rounded-lg shadow-2xl w-full">
+                        <p class="text-center mt-2 text-sm text-gray-500">（例：看板が自動で補正されるイメージ）</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 使い方セクション -->
+        <section id="how-to-use" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">使い方はとても簡単</h2>
+                    <p class="text-gray-400 mt-2">たった3ステップで、あなたの写真を安全に。</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Step 1 -->
+                    <div class="glass-effect p-8 rounded-xl">
+                        <div class="text-5xl mb-4 text-cyan-400">1</div>
+                        <h3 class="text-xl font-bold mb-2">画像をアップロード</h3>
+                        <p class="text-gray-300">補正したい写真を選択し、アップロードします。「写真を撮る」または「ファイルを選択」から選べます。</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="glass-effect p-8 rounded-xl">
+                        <div class="text-5xl mb-4 text-cyan-400">2</div>
+                        <h3 class="text-xl font-bold mb-2">AIが自動で解析・検出</h3>
+                        <p class="text-gray-300">アップロード後、AIが自動で写真内の危険な物体を検出し、危険度を判定します。しばらくお待ちください。</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="glass-effect p-8 rounded-xl">
+                        <div class="text-5xl mb-4 text-cyan-400">3</div>
+                        <h3 class="text-xl font-bold mb-2">補正された画像を確認</h3>
+                        <p class="text-gray-300">AIによって自動で補正された画像が表示されます。確認して、問題がなければダウンロードして完了です。</p>
+                    </div>
+                </div>
+                 <div class="mt-12 text-center">
+                    <p class="text-gray-400">※LLMバージョンでは、検出されたオブジェクトを個別に選択したり、編集方法を微調整したりする、より高度な操作が可能です。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- フッター -->
+        <footer class="bg-gray-900 py-8">
+            <div class="container mx-auto px-6 text-center text-gray-500">
+                <p>&copy; 2024 AIデンティファイ. All Rights Reserved.</p>
+                <p class="text-sm mt-2">このサイトは、提供された資料を基に作成された紹介ページです。</p>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
